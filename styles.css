@@ -431,7 +431,7 @@ h4 {
     }
 }
 
-/* Marquee */
+/* Marquee (Swiper) */
 .integrations-section {
     padding: 4rem 0;
     background: #f8fafc;
@@ -440,37 +440,37 @@ h4 {
     overflow: hidden;
 }
 
-.marquee-container {
+.integrations-swiper {
     width: 100%;
-    overflow: hidden;
-    position: relative;
+    padding: 2rem 0;
 }
 
-.marquee-track {
+.swiper-slide {
+    width: auto;
+    /* Allow slides to fit content */
     display: flex;
-    width: max-content;
-    animation: scroll 30s linear infinite;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.marquee-track img {
-    height: 40px;
-    margin: 0 3rem;
-    filter: grayscale(100%) opacity(0.5);
-    transition: filter 0.3s;
+.swiper-slide img {
+    height: 80px;
+    /* Larger logos */
+    width: auto;
+    filter: none;
+    /* Full color */
+    transition: transform 0.3s ease;
+    cursor: grab;
 }
 
-.marquee-track img:hover {
-    filter: grayscale(0%) opacity(1);
+.swiper-slide img:hover {
+    transform: scale(1.2);
+    /* Zoom on hover */
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+.swiper-slide:active {
+    cursor: grabbing;
 }
 
 /* Coming Soon */

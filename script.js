@@ -3,6 +3,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Lucide Icons
     lucide.createIcons();
 
+    // Initialize Swiper for Integrations
+    const swiper = new Swiper('.integrations-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 50,
+        centeredSlides: false,
+        loop: true,
+        speed: 3000, // Slow continuous scroll
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true, // Pause on hover
+        },
+        freeMode: true, // Allow dragging
+        allowTouchMove: true,
+        grabCursor: true,
+    });
+
     // Tab Switching Logic
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');

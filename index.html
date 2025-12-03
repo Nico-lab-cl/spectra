@@ -11,9 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <!-- Lucide Icons (via CDN for vanilla JS) -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -125,43 +127,53 @@
             </div>
         </section>
 
-        <!-- Integrations Marquee -->
+        <!-- Integrations Marquee (Swiper) -->
         <section id="integraciones" class="integrations-section">
             <div class="section-header">
                 <h2>Ecosistema de Integraciones</h2>
             </div>
-            <div class="marquee-container">
-                <div class="marquee-track">
-                    <!-- Logos duplicated for infinite scroll -->
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
-                        alt="Fonasa">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
-                        alt="I-Med">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
-                        alt="Cero">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
-                        alt="WhatsApp">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
-                        alt="Transbank">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
-                        alt="Softland">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
-                        alt="Zoom">
-                    <!-- Duplicate set -->
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
-                        alt="Fonasa">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
-                        alt="I-Med">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
-                        alt="Cero">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
-                        alt="WhatsApp">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
-                        alt="Transbank">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
-                        alt="Softland">
-                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
-                        alt="Zoom">
+            <div class="swiper integrations-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
+                            alt="Fonasa">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
+                            alt="I-Med">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
+                            alt="Cero">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
+                            alt="WhatsApp">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
+                            alt="Transbank">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
+                            alt="Softland">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
+                            alt="Zoom">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
+                            alt="Fonasa">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
+                            alt="I-Med">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
+                            alt="Cero">
+                    </div>
                 </div>
             </div>
         </section>
