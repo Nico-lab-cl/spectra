@@ -392,6 +392,20 @@ h4 {
 
 .ai-video-wrapper video {
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Pain Points Section */
+.pain-points-section {
+    padding: 6rem 2rem;
+    background: #f8fafc;
+    /* Slate 50 */
+}
+
+.pain-container {
+    max-width: 1280px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
