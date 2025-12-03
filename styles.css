@@ -206,6 +206,115 @@ h4 {
     line-height: 1.7;
 }
 
+/* Timeline Feature Section */
+.timeline-section {
+    background: #ffffff;
+    padding: 6rem 2rem;
+}
+
+.timeline-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.timeline-text {
+    text-align: center;
+    max-width: 800px;
+}
+
+.timeline-text h2 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.timeline-text p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+
+/* Timeline Visual */
+.feature-visual {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-mockup {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.timeline-header {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.timeline-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e2e8f0;
+    z-index: 0;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.date {
+    width: 80px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.event {
+    background: #f1f5f9;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #0f172a;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.timeline-item.active .event {
+    background: var(--accent-indigo);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+}
+
 /* Feature Sections */
 .feature-section {
     padding: 6rem 2rem;
