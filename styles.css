@@ -455,6 +455,63 @@ h4 {
     margin-top: 4px;
 }
 
+/* Software Section */
+.software-section {
+    padding: 6rem 2rem;
+    background: #ffffff;
+}
+
+.software-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.software-content h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.software-subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.software-list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.software-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+.software-list svg {
+    stroke: var(--accent-indigo);
+    color: var(--accent-indigo);
+    min-width: 24px;
+    margin-top: 4px;
+}
+
+.software-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+}
+
 /* Timeline Feature Section */
 .timeline-section {
     background: #ffffff;
@@ -902,5 +959,15 @@ footer {
 
     .pain-content h2 {
         font-size: 2rem;
+    }
+
+    .software-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .software-image {
+        order: 1;
+        /* Image below text on mobile */
     }
 }
