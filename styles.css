@@ -442,21 +442,6 @@ h4 {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    margin-bottom: 1.25rem;
-    font-size: 1.1rem;
-    color: #334155;
-}
-
-.pain-list i {
-    color: #ef4444;
-    /* Red for pain points */
-    min-width: 24px;
-    margin-top: 4px;
-}
-
-/* Timeline Feature Section */
-.timeline-section {
-    background: #ffffff;
     padding: 6rem 2rem;
 }
 
