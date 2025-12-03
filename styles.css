@@ -125,6 +125,16 @@ h4 {
     transition: height 0.3s ease;
 }
 
+.logo-text {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    border-left: 1px solid #e2e8f0;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
 .nav-links a {
     color: var(--text-muted);
     text-decoration: none;
@@ -204,6 +214,61 @@ h4 {
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     line-height: 1.7;
+}
+
+/* Features Overview Section */
+.features-overview {
+    padding: 6rem 2rem;
+    background: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(0, 194, 255, 0.1) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-indigo);
+    margin-bottom: 0.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Timeline Feature Section */
@@ -594,6 +659,10 @@ footer {
 
     .logo-img {
         height: 60px;
+    }
+
+    .logo-text {
+        display: none;
     }
 
     .hero {
