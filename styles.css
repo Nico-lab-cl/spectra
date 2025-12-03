@@ -392,8 +392,52 @@ h4 {
 
 .ai-video-wrapper video {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.pain-image img {
+    width: 100%;
     height: auto;
-    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+}
+
+.pain-content h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.pain-subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.pain-list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.pain-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+.pain-list i {
+    color: #ef4444;
+    /* Red for pain points */
+    min-width: 24px;
+    margin-top: 4px;
 }
 
 /* Timeline Feature Section */
@@ -828,6 +872,20 @@ footer {
     }
 
     .ai-content h2 {
+        font-size: 2rem;
+    }
+
+    .pain-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .pain-image {
+        order: -1;
+        /* Image on top on mobile */
+    }
+
+    .pain-content h2 {
         font-size: 2rem;
     }
 }
