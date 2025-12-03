@@ -4,72 +4,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spectra | Innovación Digital</title>
-    <meta name="description" content="Spectra - Soluciones digitales de vanguardia.">
+    <title>Spectra | Sistema Operativo Oftalmológico</title>
+    <meta name="description" content="Spectra - El sistema operativo para la oftalmología de alto volumen.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons (via CDN for vanilla JS) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <div class="background-glow"></div>
-
-    <nav class="navbar">
-        <div class="logo">SPECTRA</div>
-        <div class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto" class="btn-primary">Contacto</a>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/logo/image%20(5).png"
+                    alt="Spectra Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#soluciones">Soluciones</a>
+                <a href="#integraciones">Integraciones</a>
+                <button class="btn-contact" onclick="window.location.href='#contacto'">Contactanos</button>
+                <button class="btn-primary" onclick="window.location.href='#contacto'">Agendar Demo</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </div>
         </div>
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1 class="gradient-text">El Futuro es <br>Ahora</h1>
-                <p>Transformamos ideas en experiencias digitales inmersivas y memorables.</p>
-                <div class="cta-group">
-                    <button class="btn-primary">Empezar Proyecto</button>
-                    <button class="btn-secondary">Ver Portfolio</button>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Deje el papel. <br>
+                        Olvide la transcripción. <br>
+                        <span class="gradient-text">Spectra es el sistema operativo</span> <br>
+                        para la Oftalmología de Alto Volumen.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Integre diagnósticos DICOM, gestione inventario IOL y termine su documentación antes de que el
+                        paciente salga del consultorio.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn-primary btn-lg" onclick="window.location.href='#contacto'">Agendar
+                            Demo</button>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-visual">
-                <div class="glass-card float-animation">
-                    <div class="icon-box">🚀</div>
-                    <h3>Velocidad</h3>
-                    <p>Optimización extrema</p>
-                </div>
-                <div class="glass-card float-animation delay-1">
-                    <div class="icon-box">✨</div>
-                    <h3>Diseño</h3>
-                    <p>Estética premium</p>
+
+                <div class="hero-visual">
+                    <div class="split-visual">
+                        <!-- Left: Chaos -->
+                        <div class="visual-card chaos-card">
+                            <div class="card-header">
+                                <i data-lucide="file-stack" class="icon-chaos"></i>
+                                <h3>Caos Actual</h3>
+                            </div>
+                            <div class="paper-stack">
+                                <div class="paper p1"></div>
+                                <div class="paper p2"></div>
+                                <div class="paper p3"></div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Order (Desktop Mockup) -->
+                        <div class="visual-card order-card">
+                            <div class="desktop-frame">
+                                <div class="desktop-screen">
+                                    <!-- Mockup Header -->
+                                    <div class="mockup-nav">
+                                        <div class="patient-info">
+                                            <span class="p-name">Juan Pérez</span>
+                                            <span class="p-id">ID: 98234</span>
+                                        </div>
+                                        <div class="mockup-actions">
+                                            <div class="dot red"></div>
+                                            <div class="dot yellow"></div>
+                                            <div class="dot green"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Mockup Body -->
+                                    <div class="mockup-body">
+                                        <div class="mockup-sidebar">
+                                            <div class="sidebar-icon active"><i data-lucide="layout-dashboard"></i>
+                                            </div>
+                                            <div class="sidebar-icon"><i data-lucide="calendar"></i></div>
+                                            <div class="sidebar-icon"><i data-lucide="eye"></i></div>
+                                            <div class="sidebar-icon"><i data-lucide="file-text"></i></div>
+                                        </div>
+                                        <div class="mockup-content">
+                                            <div class="content-header">
+                                                <h4>Resumen Clínico</h4>
+                                                <span class="badge">En consulta</span>
+                                            </div>
+                                            <div class="chart-area">
+                                                <!-- Simulated Chart -->
+                                                <div class="chart-bar" style="height: 60%"></div>
+                                                <div class="chart-bar" style="height: 80%"></div>
+                                                <div class="chart-bar" style="height: 45%"></div>
+                                                <div class="chart-bar" style="height: 90%"></div>
+                                            </div>
+                                            <div class="data-row">
+                                                <div class="data-box">PIO OD: 12</div>
+                                                <div class="data-box">PIO OI: 14</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="glow-effect"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features">
-            <div class="feature-card">
-                <h2>Innovación</h2>
-                <p>Tecnologías de última generación para resultados escalables.</p>
+        <!-- Feature A: Single Page Experience -->
+        <section id="soluciones" class="feature-section">
+            <div class="section-header">
+                <h2>Todo en una vista.</h2>
+                <p>Historia, Refracción y Plan visible al mismo tiempo.</p>
             </div>
-            <div class="feature-card">
-                <h2>Estrategia</h2>
-                <p>Análisis de datos para potenciar tu crecimiento.</p>
+            <div class="feature-visual large-mockup">
+                <div class="timeline-mockup glass-panel">
+                    <!-- Abstract representation of timeline -->
+                    <div class="timeline-header">
+                        <span>Línea de Tiempo del Paciente</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="timeline-item">
+                            <div class="date">10 Oct</div>
+                            <div class="event">Consulta General</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="date">12 Oct</div>
+                            <div class="event">Examen OCT</div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="date">Hoy</div>
+                            <div class="event">Cirugía Catarata</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature-card">
-                <h2>Soporte</h2>
-                <p>Acompañamiento continuo en cada etapa.</p>
+        </section>
+
+        <!-- Feature B: Specialty Templates (Tabs) -->
+        <section class="feature-section">
+            <div class="section-header">
+                <h2>Plantillas por Especialidad</h2>
+            </div>
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="retina">Retina</button>
+                    <button class="tab-btn" data-tab="glaucoma">Glaucoma</button>
+                    <button class="tab-btn" data-tab="catarata">Catarata</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="retina">
+                        <div class="mockup-placeholder">
+                            <i data-lucide="eye"></i>
+                            <p>Flujo de Inyecciones Intravítreas</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="glaucoma">
+                        <div class="mockup-placeholder">
+                            <i data-lucide="activity"></i>
+                            <p>Seguimiento de PIO y Campos Visuales</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="catarata">
+                        <div class="mockup-placeholder">
+                            <i data-lucide="layers"></i>
+                            <p>Calculadora IOL y Plan Quirúrgico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations Marquee -->
+        <section id="integraciones" class="integrations-section">
+            <div class="section-header">
+                <h2>Ecosistema de Integraciones</h2>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Logos duplicated for infinite scroll -->
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
+                        alt="Fonasa">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
+                        alt="I-Med">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
+                        alt="Cero">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
+                        alt="WhatsApp">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
+                        alt="Transbank">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
+                        alt="Softland">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
+                        alt="Zoom">
+                    <!-- Duplicate set -->
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
+                        alt="Fonasa">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
+                        alt="I-Med">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
+                        alt="Cero">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
+                        alt="WhatsApp">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
+                        alt="Transbank">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
+                        alt="Softland">
+                    <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
+                        alt="Zoom">
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon: Opticas -->
+        <section class="coming-soon-section">
+            <div class="glass-card coming-soon-card">
+                <span class="badge-new">PRÓXIMAMENTE</span>
+                <h2>Integración Nativa con Retail Óptico</h2>
+                <p>Conecte la receta médica directamente con el punto de venta y controle su inventario de armazones.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section (Target for CTA) -->
+        <section id="contacto" class="contact-section">
+            <div class="section-header">
+                <h2>Empiece hoy mismo</h2>
+                <p>Transforme su clínica con Spectra.</p>
+                <button class="btn-primary btn-lg">Solicitar Demo</button>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Spectra. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Spectra by Medinet. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
+    <!-- Floating Bottom Navbar -->
+    <div class="floating-bottom-nav">
+        <div class="float-content">
+            <span>Estás a un clic de modernizar tu clínica.</span>
+            <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="btn-whatsapp">
+                <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
+                    alt="WhatsApp">
+                Hablemos por WhatsApp
+            </a>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
