@@ -150,7 +150,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/Gemini_Generated_Image_mo4tk3mo4tk3mo4t.png') no-repeat center center;
+    background: url('https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/Gemini_Generated_Image_mo4tk3mo4tk3mo4t.png') no-repeat right center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -489,7 +489,8 @@ footer {
 
     .hero {
         padding: 120px 1.5rem 60px;
-        background-position: 70% center;
+        background: none;
+        background-color: #ffffff;
     }
 
     .hero-content {
