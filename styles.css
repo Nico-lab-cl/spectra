@@ -970,11 +970,450 @@ footer {
     }
 }
 
+
+
+/* Coming Soon */
+.coming-soon-section {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.coming-soon-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-new {
+    background: var(--accent-indigo);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Floating Bottom Nav */
+.floating-bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.float-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-content span {
+    font-size: 0.9rem;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+}
+
+.btn-whatsapp img {
+    height: 18px;
+    width: auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+    background: #f8fafc;
+    margin-top: 4rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 140px 2rem 80px;
+    }
+
+    .hero-container {
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 1.5rem 60px;
+        background: none;
+        background-color: #ffffff;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+
+    .hero-subtitle-main {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .ai-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .ai-content h2 {
+        font-size: 2rem;
+    }
+
+    .pain-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .pain-image {
+        order: -1;
+        /* Image on top on mobile */
+    }
+
+    .pain-content h2 {
+        font-size: 2rem;
+    }
+
+    .software-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .software-image {
+        order: 1;
+        /* Image below text on mobile */
+    }
+}
+
 .patient-attention-section {
     padding: 6rem 2rem;
-    background: #f8fafc; /* Slate 50 to alternate with white */
+    background: #f8fafc;
+    /* Slate 50 to alternate with white */
 }
 
 .patient-attention-section img {
-    mix-blend-mode: multiply; /* Blends white background with the section's gray */
+    mix-blend-mode: multiply;
+    /* Blends white background with the section's gray */
+}
+
+/* Surgery Section (Dark Mode) */
+.surgery-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    /* Deep Navy to Indigo */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a subtle glow effect */
+.surgery-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 194, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+.surgery-container {
+    align-items: center;
+}
+
+.surgery-list li {
+    color: #e2e8f0;
+    /* Light gray text for dark mode */
+}
+
+.surgery-list svg {
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.float-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-content span {
+    font-size: 0.9rem;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+}
+
+.btn-whatsapp img {
+    height: 18px;
+    width: auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+    background: #f8fafc;
+    margin-top: 4rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 140px 2rem 80px;
+    }
+
+    .hero-container {
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 1.5rem 60px;
+        background: none;
+        background-color: #ffffff;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+
+    .hero-subtitle-main {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .ai-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .ai-content h2 {
+        font-size: 2rem;
+    }
+
+    .pain-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .pain-image {
+        order: -1;
+        /* Image on top on mobile */
+    }
+
+    .pain-content h2 {
+        font-size: 2rem;
+    }
+
+    .software-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .software-image {
+        order: 1;
+        /* Image below text on mobile */
+    }
+}
+
+.patient-attention-section {
+    padding: 6rem 2rem;
+    background: #f8fafc;
+    /* Slate 50 to alternate with white */
+}
+
+.patient-attention-section img {
+    mix-blend-mode: multiply;
+    /* Blends white background with the section's gray */
+}
+
+/* Surgery Section (Dark Mode) */
+.surgery-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    /* Deep Navy to Indigo */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a subtle glow effect */
+.surgery-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 194, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+.surgery-container {
+    align-items: center;
+}
+
+.surgery-list li {
+    color: #e2e8f0;
+    /* Light gray text for dark mode */
+}
+
+.surgery-list svg {
+    stroke: #00C2FF;
+    /* Cyan accent for icons */
+    color: #00C2FF;
+}
+
+.surgery-image-wrapper img {
+    /* Removed border and shadow as the image is a device mockup */
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    /* Blends white background if present */
+    filter: contrast(1.1);
+    /* Slight boost to make the screen pop */
 }
