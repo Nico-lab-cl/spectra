@@ -969,3 +969,12 @@ footer {
         /* Image below text on mobile */
     }
 }
+
+.patient-attention-section {
+    padding: 6rem 2rem;
+    background: #f8fafc; /* Slate 50 to alternate with white */
+}
+
+.patient-attention-section img {
+    mix-blend-mode: multiply; /* Blends white background with the section's gray */
+}
