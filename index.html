@@ -4,34 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spectra | Sistema Operativo Oftalmológico</title>
-    <meta name="description" content="Spectra - Software para clínicas oftalmológicas.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Spectra - Sistema Integral para Oftalmología</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Lucide Icons (via CDN for vanilla JS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="logo-container">
                 <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/logo/image%20(5).png"
                     alt="Spectra Logo" class="logo-img">
-                <span class="logo-text">Software hecho por oftalmólogos</span>
+                <span class="badge-new" style="margin-left: 1rem; margin-bottom: 0;">Software hecho por
+                    oftalmólogos</span>
             </div>
             <div class="nav-links">
                 <a href="#soluciones">Soluciones</a>
+                <a href="#features">Características</a>
                 <a href="#integraciones">Integraciones</a>
-                <button class="btn-contact" onclick="window.location.href='#contacto'">Contactanos</button>
-                <button class="btn-primary" onclick="window.location.href='#contacto'">Agendar Demo</button>
+            </div>
+            <div class="nav-buttons" style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#agendamiento" class="btn-nav-primary">Agendar Demo</a>
+                <a href="#contacto" class="btn-nav-secondary">Contacto</a>
             </div>
             <div class="mobile-menu-btn">
                 <i data-lucide="menu"></i>
@@ -39,58 +36,57 @@
         </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        Fideliza tus pacientes mientras optimizas tu práctica médica.
-                    </h1>
-                    <span class="hero-subtitle-main">
-                        Software para clínicas oftalmológicas.
-                    </span>
-                    <p class="hero-description">
-                        Automatiza tus operaciones clínicas, gestiona el flujo comercial de tu clínica y finaliza tu
-                        trabajo a tiempo.
-                    </p>
-                    <div class="hero-cta">
-                        <button class="btn-primary btn-lg" onclick="window.location.href='#contacto'">Agendar
-                            Demo</button>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Sistema integral para la atencion oftalmologica</h1>
+                <p class="hero-description">Centralice su Clínica, Pabellón y Óptica en una sola plataforma inteligente.
+                    Desde la transcripción de consultas con voz y traducción IA, hasta la planificación quirúrgica
+                    avanzada, gestión de inventario médico y automatización de marketing y cobranza</p>
+                <button class="btn-primary btn-lg">Solicitar Demostración</button>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Features Overview Section -->
-        <section id="soluciones" class="features-overview">
+    <main>
+        <!-- Features Overview (Características) -->
+        <section id="features" class="features-overview">
             <div class="section-header">
-                <h2>Todo lo que una clínica oftalmológica necesita en un solo sistema</h2>
-                <p>Spectra satisface las necesidades oftalmológicas en la práctica médica y acompaña al paciente en toda
-                    su atención médica</p>
+                <h2>Todo lo que su clínica oftalmológica necesita para escalar</h2>
+                <p>SPECTRA unifica la gestión quirúrgica, el crecimiento comercial y el control financiero en una sola
+                    plataforma operativa.</p>
             </div>
             <div class="features-grid">
-                <!-- Card 1 -->
+                <!-- Feature 1 -->
                 <div class="feature-card">
-                    <div class="icon-wrapper"><i data-lucide="layout"></i></div>
-                    <h3>Interfaz intuitiva</h3>
-                    <p>Todo lo que necesitas ver en una sola vista, con guías e instrucciones, nuestro sistema se adapta
-                        a tu modo de trabajo adaptando las vistas a tu forma de trabajo.</p>
+                    <div class="icon-wrapper">
+                        <i data-lucide="microscope"></i>
+                    </div>
+                    <h3>Gestión de Pabellón y Cirugía</h3>
+                    <p>Visualice la ocupación de quirófanos en tiempo real. El sistema envía notificaciones automáticas
+                        al médico, descuenta los insumos utilizados del inventario y registra el protocolo quirúrgico
+                        directamente en la historia clínica del paciente.</p>
                 </div>
-                <!-- Card 2 -->
+                <!-- Feature 2 -->
                 <div class="feature-card">
-                    <div class="icon-wrapper"><i data-lucide="users"></i></div>
-                    <h3>Gestión comercial a tus pacientes</h3>
-                    <p>Visualiza las etapas en las que se encuentran tus pacientes, automatiza mensajes de marketing,
-                        ofrece descuento a pacientes frecuentes y a quienes no han asistido en un intervalo de tiempo.
-                    </p>
+                    <div class="icon-wrapper">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Marketing y Crecimiento</h3>
+                    <p>Automatice el seguimiento comercial de sus pacientes. Detecte presupuestos de cirugía no
+                        cerrados, active campañas de recordatorio para controles anuales y segmente su audiencia para
+                        llenar su agenda con pacientes de alto valor.</p>
                 </div>
-                <!-- Card 3 -->
+                <!-- Feature 3 -->
                 <div class="feature-card">
-                    <div class="icon-wrapper"><i data-lucide="sparkles"></i></div>
-                    <h3>Incorpora IA en tu práctica médica</h3>
-                    <p>Automatiza campos en la atención médica, traduce la conversación entre el médico y paciente datos
-                        organizados en la misma historia clínica, modelo predictivo de enfermedades asociadas.</p>
+                    <div class="icon-wrapper">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <h3>Gestión Financiera</h3>
+                    <p>Automatice el cálculo de honorarios médicos y liquidaciones complejas. El sistema integra el
+                        presupuesto quirúrgico, genera reportes de rentabilidad por procedimiento y detecta
+                        discrepancias financieras antes del cierre de caja.</p>
                 </div>
             </div>
         </section>
@@ -99,66 +95,30 @@
         <section class="ai-section">
             <div class="ai-container">
                 <div class="ai-content">
-                    <span class="ai-badge">NUEVO: SPECTRA IA</span>
-                    <h2>Traduce una conversación natural en la atención médica con Spectra IA</h2>
-                    <p>Mientras te preocupas de atender a tu paciente olvídate de digitar sus antecedentes, nuestra IA
-                        traduce y transcribe toda la cita médica y lo ordena estructuradamente directamente en los
-                        campos de la historia clínica, codificamos los diagnósticos con SNOMED y te damos un análisis
-                        predictivo del diagnóstico.</p>
+                    <span class="ai-badge">NUEVO: SPECTRA AI</span>
+                    <h2>Transcriba sus consultas con su voz. Automáticamente.</h2>
+                    <p>Olvídese de escribir. Nuestra IA escucha, transcribe y estructura la consulta oftalmológica en
+                        tiempo real. Detecta diagnósticos, medicamentos y procedimientos, llenando la ficha por usted.
+                    </p>
+                    <ul class="ai-list">
+                        <li><i data-lucide="mic"></i> Reconocimiento de voz médico especializado.</li>
+                        <li><i data-lucide="languages"></i> Traducción en tiempo real para pacientes extranjeros.</li>
+                        <li><i data-lucide="file-text"></i> Generación automática de resúmenes y recetas.</li>
+                    </ul>
                 </div>
                 <div class="ai-video-wrapper">
                     <video autoplay loop muted playsinline>
                         <source
                             src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/transcripcion-ia.mp4"
                             type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
+                        Tu navegador no soporta video HTML5.
                     </video>
                 </div>
             </div>
         </section>
 
-        <!-- Pain Points Section -->
-        <section class="pain-points-section">
-            <div class="pain-container">
-                <div class="pain-image">
-                    <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/medico-colapsado.png"
-                        alt="Médico estresado por el software">
-                </div>
-                <div class="pain-content">
-                    <h2>¿Te pasas el día mirando pacientes o peleando con la pantalla?</h2>
-                    <p class="pain-subtitle">Tu software no debería ser otra causa de estrés.</p>
-                    <ul class="pain-list">
-                        <li>
-                            <i data-lucide="x-circle"></i>
-                            <span>El papeleo manual te retiene en la clínica cuando deberías estar descansando.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="x-circle"></i>
-                            <span>Llenar formularios a mano te quita tiempo de calidad con el paciente.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="x-circle"></i>
-                            <span>Tu equipo sobrevive a base de Excel y papelitos sueltos porque no tienen un
-                                sistema.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="x-circle"></i>
-                            <span>No tienes una herramienta centralizada para gestionar sus historias, citas y
-                                seguimientos.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="x-circle"></i>
-                            <span>Trabajas sin saber realmente la rentabilidad de tu consulta al día de hoy.</span>
-                        </li>
-                    </ul>
-                    <button class="btn-primary btn-lg" onclick="window.location.href='#contacto'">Programa una demo
-                        gratis</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Software Section -->
-        <section class="software-section">
+        <!-- Software Section (Soluciones) -->
+        <section id="soluciones" class="software-section">
             <div class="software-container">
                 <div class="software-content">
                     <h2>Software para oftalmología</h2>
@@ -210,8 +170,7 @@
         <section class="patient-attention-section">
             <div class="software-container">
                 <div class="software-image">
-                    <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/Gemini_Generated_Image_zcupu5zcupu5zcup.png"
-                        alt="Atención al paciente">
+                    <img src="patient_attention_new.png" alt="Atención al paciente">
                 </div>
                 <div class="software-content">
                     <h2>Tus pacientes merecen atención antes, durante y después de la consulta</h2>
@@ -231,122 +190,281 @@
                                 acordarte.</span>
                         </li>
                         <li>
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- Feature B: Specialty Templates (Tabs) -->
-        <section class="feature-section">
-            <div class="section-header">
-                <h2>Plantillas por Especialidad</h2>
-            </div>
-            <div class="tabs-container">
-                <div class="tabs-nav">
-                    <button class="tab-btn active" data-tab="retina">Retina</button>
-                    <button class="tab-btn" data-tab="glaucoma">Glaucoma</button>
-                    <button class="tab-btn" data-tab="catarata">Catarata</button>
-                </div>
-                <div class="tabs-content">
-                    <div class="tab-pane active" id="retina">
-                        <div class="mockup-placeholder">
-                            <i data-lucide="eye"></i>
-                            <p>Flujo de Inyecciones Intravítreas</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="glaucoma">
-                        <div class="mockup-placeholder">
-                            <i data-lucide="activity"></i>
-                            <p>Seguimiento de PIO y Campos Visuales</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="catarata">
-                        <div class="mockup-placeholder">
-                            <i data-lucide="layers"></i>
-                            <p>Calculadora IOL y Plan Quirúrgico</p>
-                        </div>
-                    </div>
+                            <i data-lucide="check-circle"></i>
+                            <span>Lanza campañas automáticas por patología o fecha de cumpleaños.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle"></i>
+                            <span>Gestiona cobros, presupuestos y facturación.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle"></i>
+                            <span>Organiza protocolos, insumos y seguimiento post-operatorio de tus cirugías.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Integrations Marquee (Swiper) -->
+        <!-- Surgery Management Section -->
+        <section class="surgery-section">
+            <div class="software-container surgery-container">
+                <div class="software-content">
+                    <h2 class="gradient-text">Tus Cirugías</h2>
+                    <p class="software-subtitle" style="color: #475569; font-weight: 700;">Gestión integral del
+                        quirófano: Planificación, control y visualización en tiempo real.</p>
+                    <ul class="software-list surgery-list">
+                        <li>
+                            <i data-lucide="calendar-clock"></i>
+                            <span><strong>Planificación Quirúrgica.</strong> Organiza cada procedimiento con precisión,
+                                asignando recursos y tiempos automáticamente.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="package-check"></i>
+                            <span><strong>Control de Uso.</strong> Monitorea insumos y lentes utilizados en cada
+                                intervención para una gestión de inventario exacta.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="database-zap"></i>
+                            <span><strong>Datos Integrados.</strong> Toda la información quirúrgica se sincroniza al
+                                instante con la Historia Clínica del paciente.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="monitor-play"></i>
+                            <span><strong>Visualización de Pabellones.</strong> Tablero en tiempo real del estado y
+                                ocupación de tus quirófanos en funcionamiento.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="software-image surgery-image-wrapper">
+                    <img src="surgery_laptop.png" alt="Tablero de Control Quirúrgico Spectra">
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations Marquee (Pure CSS) -->
         <section id="integraciones" class="integrations-section">
             <div class="section-header">
                 <h2>Ecosistema de Integraciones</h2>
             </div>
-            <div class="swiper integrations-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
                             alt="Fonasa">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
                             alt="I-Med">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
                             alt="Cero">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
                             alt="WhatsApp">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
                             alt="Transbank">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
                             alt="Softland">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
                             alt="Zoom">
                     </div>
-                    <div class="swiper-slide">
+                    <!-- Set 2 (Duplicate for Loop) -->
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/5d8799d8-a425-4643-a729-1e5b583426e6__fonasa.png"
                             alt="Fonasa">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/fad1fed4-7854-4ad6-948d-6cba476023e0__imed.png"
                             alt="I-Med">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="marquee-item">
                         <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/b273d8a3-a488-4541-bcd8-84142ce86d9c__cero.png"
                             alt="Cero">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/2e738343-9092-41b6-ab9b-edcaa22bd9a6__whatsapp.png"
+                            alt="WhatsApp">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/baad164a-913a-4ccf-bb49-dede94ab67d9__transbank.png"
+                            alt="Transbank">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/0cd51d38-4afe-42bc-8a24-97eef403750d__softland.png"
+                            alt="Softland">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="https://cdn.grapesjs.com/workspaces/cmhxptjkg1vmqhtj9atld96o3/assets/f09e458a-b337-42b7-89d4-b75a162733c2__zoomn.png"
+                            alt="Zoom">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Coming Soon: Opticas -->
-        <section class="coming-soon-section">
-            <div class="glass-card coming-soon-card">
-                <span class="badge-new">PRÓXIMAMENTE</span>
-                <h2>Integración Nativa con Retail Óptico</h2>
-                <p>Conecte la receta médica directamente con el punto de venta y controle su inventario de armazones.
-                </p>
+        <!-- Optics Section -->
+        <section class="optics-section">
+            <div class="optics-container">
+                <div class="section-header">
+                    <h2>Convierta Recetas Médicas en Ventas Cerradas.</h2>
+                    <p>Haz que el paciente salga con una orden de compra.</p>
+                </div>
+
+                <!-- Visual Flow Block -->
+                <div class="optics-flow-container">
+                    <div class="flow-step">
+                        <div class="icon-circle">
+                            <i data-lucide="eye"></i>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </div>
+                    <div class="flow-step">
+                        <div class="icon-circle">
+                            <i data-lucide="store"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-description">
+                    <p>El médico genera la receta, la óptica recibe la orden al instante. Cuando el paciente llega al
+                        mostrador, su graduación y sus lentes recomendados ya lo están esperando.</p>
+                </div>
+
+                <!-- Dashboard Image -->
+                <div class="optics-dashboard-preview">
+                    <img src="optical_inventory_dashboard_1764912437355.png" alt="Panel de Control de Óptica Spectra">
+                </div>
+
+                <!-- Control Points Grid -->
+                <div class="optics-grid">
+                    <!-- Point 1 -->
+                    <div class="optics-card">
+                        <div class="card-icon"><i data-lucide="clipboard-list"></i></div>
+                        <h3>Historial de Paciente</h3>
+                        <p>Guarda recetas y órdenes de compra en la historia clínica. Mantén un registro unificado y
+                            accesible de toda la salud visual de tu paciente.</p>
+                    </div>
+                    <!-- Point 2 -->
+                    <div class="optics-card">
+                        <div class="card-icon"><i data-lucide="scan-barcode"></i></div>
+                        <h3>Trazabilidad de Inventario</h3>
+                        <p>Envía la receta al inventario de la óptica al instante. Asegura la trazabilidad total de tus
+                            productos por SKU y elimina el inventario fantasma.</p>
+                    </div>
+                    <!-- Point 3 -->
+                    <div class="optics-card">
+                        <div class="card-icon"><i data-lucide="magnet"></i></div>
+                        <h3>Retención del 100%</h3>
+                        <p>Aumente su tasa de captura integrando la venta. El paciente percibirá los lentes como parte
+                            fundamental de su tratamiento médico, no como una opción.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section (Target for CTA) -->
-        <section id="contacto" class="contact-section">
-            <div class="section-header">
-                <h2>Empiece hoy mismo</h2>
-                <p>Transforme su clínica con Spectra.</p>
-                <button class="btn-primary btn-lg">Solicitar Demo</button>
+        <!-- Agendamiento Section (Simplified) -->
+        <section id="agendamiento" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Empiece hoy mismo</h2>
+                    <p>Valore su tiempo y ofrezca una experiencia personalizada. Comience con una consulta rápida.</p>
+                </div>
+                <!-- Single Column Centered -->
+                <div class="contact-centered-wrapper">
+                    <div class="meetings-iframe-container"
+                        data-src="https://meetings.hubspot.com/nicolas-cabrera1/reunion-comercial?embed=true"></div>
+                    <script type="text/javascript"
+                        src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (With HubSpot Form) -->
+        <section id="contacto" class="footer-contact-section"
+            style="padding: 6rem 2rem; background: #0f172a; color: white;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Contáctanos</h2>
+                <p style="color: #cbd5e1; font-size: 1.2rem; margin-bottom: 3rem;">Estamos listos para ayudarte a
+                    escalar tu clínica con la tecnología más avanzada.</p>
+
+                <!-- HubSpot Form -->
+                <div class="hubspot-form-container"
+                    style="background: white; padding: 2rem; border-radius: 12px; margin-bottom: 3rem;">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                    <script>
+                        hbspt.forms.create({
+                            portalId: "21935835",
+                            formId: "a44a6e1c-6f94-40da-b455-3017f72a67c9",
+                            region: "na1"
+                        });
+                    </script>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i data-lucide="mail" style="color: #00C2FF;"></i>
+                        <span style="font-size: 1.1rem;">contacto@spectra.cl</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i data-lucide="phone" style="color: #00C2FF;"></i>
+                        <span style="font-size: 1.1rem;">+56 9 1234 5678</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Spectra by Medinet. Todos los derechos reservados.</p>
+    <!-- Footer (Redesigned) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col brand-col">
+                    <img src="https://21935835.fs1.hubspotusercontent-na1.net/hubfs/21935835/spectra/logo/image%20(5).png
+                        alt=" Spectra Logo class="footer-logo">
+                    <p>Sistema integral para la gestión oftalmológica moderna. Centralice, automatice y crezca.</p>
+                </div>
+
+                <!-- Links Column -->
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#soluciones">Soluciones</a></li>
+                        <li><a href="#integraciones">Integraciones</a></li>
+                        <li><a href="#agendamiento">Agendar Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-info">
+                        <li><i data-lucide="mail"></i> contacto@spectra.cl</li>
+                        <li><i data-lucide="phone"></i> +56 9 1234 5678</li>
+                        <li><i data-lucide="map-pin"></i> Santiago, Chile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spectra by Medinet. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -3,23 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Initialize Swiper for Integrations
-    const swiper = new Swiper('.integrations-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 50,
-        centeredSlides: false,
-        loop: true,
-        speed: 3000, // Slow continuous scroll
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true, // Pause on hover
-        },
-        freeMode: true, // Allow dragging
-        allowTouchMove: true,
-        grabCursor: true,
-    });
-
     // Tab Switching Logic
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');
@@ -40,26 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Navbar Scroll Effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-            navbar.style.borderBottom = '1px solid #e2e8f0';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-            navbar.style.boxShadow = 'none';
-            navbar.style.borderBottom = '1px solid transparent';
-        }
-    });
+    const navbar = document.querySelector('.navbar'); // Changed to querySelector class
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
+                navbar.style.borderBottom = '1px solid #e2e8f0';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+                navbar.style.boxShadow = 'none';
+                navbar.style.borderBottom = '1px solid transparent';
+            }
+        });
+    }
 
     // Smooth Scroll for Anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetId = this.getAttribute('href');
+            if (targetId === '#' || !targetId) return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
